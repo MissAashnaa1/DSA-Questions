@@ -1,58 +1,46 @@
 class Solution {
+    // int helper(vector<vector<int>>grid,int i,int j,vector<vector<int>>&dp){
+    //     if(i==0&&j==0)
+    //         return grid[0][0];
+    //     if(i<0||j<0)
+    //         return 1e8;
+    //     if(dp[i][j]!=-1)
+    //         return dp[i][j];
+
+
+        
+    //      int   up=grid[i][j]+helper(grid,i-1,j,dp);
+        
+    //      int   left=grid[i][j]+helper(grid,i,j-1,dp);
+    //     return dp[i][j]=min(up,left);
+        
+
+    // }
 public:
     int minPathSum(vector<vector<int>>& grid) {
-        
         int m=grid.size();
         int n=grid[0].size();
-         priority_queue<pair<int, pair<int, int>>,
-                       vector<pair<int, pair<int, int>>>,
-                       greater<pair<int, pair<int, int>>>>pq;
-        // vector<vector<int>>dp(m,vector<int>(n,-1));
-        vector<vector<int>> dist(m, vector<int>(n, 1e9));
-        dist[0][0] = grid[0][0];
-        pq.push({grid[0][0], {0, 0}});
-            // helper(m,n,grid,dp)
-            
-            while (!pq.empty())
-        {
-            auto it = pq.top();
-            pq.pop();
-            int sum = it.first;
-            int row = it.second.first;
-            int col = it.second.second;
-
-            // Check if we have reached the destination cell,
-            // return the current value of difference (which will be min).
-            // if (row == n - 1 && col == m - 1)
-            //     return sum;
-           
-            int dr[2]={1,0};
-            int dc[2]={0,1};
-            for (int i = 0; i < 2; i++)
-            {
-                // row - 1, col
-                // row, col + 1
-                // row - 1, col
-                // row, col - 1
-                int newr = row + dr[i];
-                int newc = col + dc[i];
-
-                // Checking validity of the cell.
-                if (newr >= 0 && newc >= 0 && newr < m && newc < n)
-                {
-                    
-                    int newEffort = sum + grid[newr][newc];
-
-                    // If the calculated effort is less than the prev value
-                    // we update as we need the min effort.
-                    if (newEffort < dist[newr][newc])
-                    {
-                        dist[newr][newc] = newEffort;
-                        pq.push({dist[newr][newc], {newr, newc}});
-                    }
+        vector<vector<int>>dp(m,vector<int>(n,-1));
+        // dp[0][0]=grid[0][0];
+        // return helper(grid,m-1,n-1,dp);
+        // dp[0][0]=grid[0][0];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(i==0&&j==0){
+                    dp[0][0]=grid[0][0];
+                    continue;
                 }
+                    
+                int up=1e7;
+                int down=1e7;
+                if(i>0)
+                    up=grid[i][j]+dp[i-1][j];
+                if(j>0)
+                    down=grid[i][j]+dp[i][j-1];
+                dp[i][j]=min(up,down);
+
             }
         }
-        return dist[m-1][n-1];
+        return dp[m-1][n-1];
     }
 };
