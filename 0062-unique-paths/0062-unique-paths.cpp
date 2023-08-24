@@ -38,24 +38,29 @@ public:
         // dp[m-1][n-1]=0;
         // int ans=helper(m-1,n-1,0,0,dp);
        
+       
+      vector<int> prev(n,0);
         for(int i=0;i<m;i++){
+             vector<int> curr(n,0);
             for(int j=0;j<n;j++){
+               
                 if(i==0&&j==0){
-                    dp[i][j]=1;
+                    curr[j]=1;
                 }
                 else{
                     int up=0;
                     int right=0;
                     if(i>0)
-                        up=dp[i-1][j];
+                        up=prev[j];
                     if(j>0)
-                        right=dp[i][j-1];
-                    dp[i][j]=up+right;
+                        right=curr[j-1];
+                    curr[j]=up+right;
                 }
             }
+            prev=curr;
         }
 
-        return dp[m-1][n-1];
+        return prev[n-1];
     
     }
 };
