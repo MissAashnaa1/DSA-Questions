@@ -34,33 +34,42 @@ public:
     int uniquePaths(int m, int n) {
         
         // int ans=rec(m-1,n-1,0,0);
-        vector<vector<int>>dp(m,vector<int>(n,-1));
-        // dp[m-1][n-1]=0;
-        // int ans=helper(m-1,n-1,0,0,dp);
+    //     vector<vector<int>>dp(m,vector<int>(n,-1));
+    //     // dp[m-1][n-1]=0;
+    //     // int ans=helper(m-1,n-1,0,0,dp);
        
        
-      vector<int> prev(n,0);
-        for(int i=0;i<m;i++){
-             vector<int> curr(n,0);
-            for(int j=0;j<n;j++){
+    //   vector<int> prev(n,0);
+    //     for(int i=0;i<m;i++){
+    //          vector<int> curr(n,0);
+    //         for(int j=0;j<n;j++){
                
-                if(i==0&&j==0){
-                    curr[j]=1;
-                }
-                else{
-                    int up=0;
-                    int right=0;
-                    if(i>0)
-                        up=prev[j];
-                    if(j>0)
-                        right=curr[j-1];
-                    curr[j]=up+right;
-                }
-            }
-            prev=curr;
-        }
+    //             if(i==0&&j==0){
+    //                 curr[j]=1;
+    //             }
+    //             else{
+    //                 int up=0;
+    //                 int right=0;
+    //                 if(i>0)
+    //                     up=prev[j];
+    //                 if(j>0)
+    //                     right=curr[j-1];
+    //                 curr[j]=up+right;
+    //             }
+    //         }
+    //         prev=curr;
+    //     }
 
-        return prev[n-1];
+    //     return prev[n-1];
     
+    // }
+    int formula= n-1+m-1;
+    int r=m-1;
+    double res=1;
+    for(int i=1;i<=r;i++){
+        res=res*(formula-r+i)/i;
+
+    }
+    return (int)res;
     }
 };
