@@ -1,21 +1,18 @@
 class Solution {
 public:
-    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
-        map<int,int>m;
-        int n=nums.size();
-        for(int i=0;i<n;i++){
-            
-            m[nums[i]]++;
-
-        }
-        vector<int>v(n,0);
-        for(int i=0;i<n;i++){
-            for(auto it : m){
-                if(it.first<nums[i]){
-                        v[i]+=it.second;
-                }
-            }
-        }
-        return v;
+    
+       vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        vector<int> ans = nums;
+        unordered_map<int, int> m;
+        sort(ans.begin(), ans.end());
+        //8 1 2 2 3
+        //1 2 2 3 8
+        
+        for(int i=nums.size()-1; i>=0; i--)
+            m[ans[i]] = i;
+        for(int i=0; i<nums.size(); i++)
+            nums[i] = m[nums[i]];
+        return nums;
+    
     }
 };
