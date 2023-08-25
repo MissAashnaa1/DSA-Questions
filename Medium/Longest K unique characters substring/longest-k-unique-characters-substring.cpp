@@ -18,12 +18,18 @@ class Solution{
         while(j<s.length()){
             m[s[j]]++;
             if(m.size()<k){
-                
-               j++;
-            }
-            else if(m.size()==k){
-                ans=max(ans,j-i+1);
+               
                 j++;
+            
+            }
+            
+            else if(m.size()==k){
+                
+                ans=max(ans,j-i+1);
+                
+                j++;
+                
+                
             }
             else if(m.size()>k){
                 
@@ -32,7 +38,9 @@ class Solution{
                     m.erase(s[i]);
                 i++;
                 j++;
+                
             }
+            
         }
         return ans;
     }
