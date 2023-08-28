@@ -1,7 +1,7 @@
 class Solution {
-    void helper( set<vector<int>>&s,int k,int ind,int sum,vector<int>ans,int number){
+    void helper( vector<vector<int>>&v,int k,int ind,int sum,vector<int>ans,int number){
         if(sum==0&&ind==k){
-            s.insert(ans);
+            v.push_back(ans);
             return;
         }
         if(sum<0||ind>k)
@@ -9,24 +9,30 @@ class Solution {
         for(auto i=number;i<=9;i++)
             {
                 //take
+                
                 ans.push_back(i);
-                helper(s,k,ind+1,sum-i,ans,i+1);
+                helper(v,k,ind+1,sum-i,ans,i+1);
                 ans.pop_back();
-                helper(s,k,ind,sum,ans,i+1);
+                // helper(v,k,ind,sum,ans,i+1);
             }
     }
 public:
     vector<vector<int>> combinationSum3(int k, int sum) {
         
-        set<vector<int>>s;
+        
         vector<int>v;
-        helper(s,k,0,sum,v,1);
         vector<vector<int>>ans; 
-        
-        for(auto it:s)
-            ans.push_back(it);
-        
+        helper(ans,k,0,sum,v,1);
+        int n=ans.size();
+        vector<vector<int>>res;
+        // int i=0;
+        // while(i<n-1){
+        //     if(ans[i]!=ans[i+1])
+        //         res.push_back(ans[i]);
+        //     i++;
+        // }
+        // res.push_back(ans[i]);
+        //  return res;
         return ans;
-        
     }
 };
