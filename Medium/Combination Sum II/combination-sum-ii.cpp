@@ -9,36 +9,34 @@ using namespace std;
 
 class Solution {
   public:
-void helper(vector<int>nums,int target,vector<vector<int>>&v,vector<int> & temp,int i,int np){
-      if(target==0){
-          v.push_back(temp);
-          return ;
-      }
-      if(i==nums.size()|| target<0){
-          return;
-      }
-      if(target<nums[i]){
-          return;
-      }
-      if(np!=nums[i]){
-          temp.push_back(nums[i]);
-          helper(nums,target-nums[i],v,temp,i+1,np);
-          temp.pop_back();
-      }
-      helper(nums,target,v,temp,i+1,nums[i]);
-      
-      
-      
-  }
-    vector<vector<int>> combinationSum2(vector<int> &candidates, int target) {
-        // Write your code here 
-        sort(candidates.begin(),candidates.end());
-        vector<vector<int>>v;
-        vector<int>temp;
-      //  int i=0;
-      int t=INT_MAX;
-        helper(candidates,target,v,temp,0,t);
+  void helper(vector<int>&arr,vector<vector<int> >&v,int ind,int sum,vector<int>&curr){
+        if(sum==0){   
+            v.push_back(curr);
+            return;
+        }
+        for(int i=ind;i<arr.size();i++){
+            if(ind<i&&arr[i]==arr[i-1])
+                continue;
+            if(sum<0)
+                break;
+            curr.push_back(arr[i]);
+            helper(arr,v,i+1,sum-arr[i],curr);
+            curr.pop_back();
+        }
+        
+    }
+    vector<vector<int>> combinationSum2(vector<int> &A, int B) {
+        // Write your code here'
+        sort(A.begin(),A.end());
+         vector<vector<int> >v;
+        //  set<vector<int>>s;
+         vector<int>curr;
+        
+         helper(A,v,0,B,curr);
+         
+         
         return v;
+         
     }
 };
 
