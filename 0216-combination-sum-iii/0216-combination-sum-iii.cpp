@@ -13,8 +13,9 @@ class Solution {
                 ans.push_back(i);
                 helper(v,k,ind+1,sum-i,ans,i+1);
                 ans.pop_back();
-                // helper(v,k,ind,sum,ans,i+1);
+                helper(v,k,ind,sum,ans,i+1);
             }
+
     }
 public:
     vector<vector<int>> combinationSum3(int k, int sum) {
@@ -25,14 +26,15 @@ public:
         helper(ans,k,0,sum,v,1);
         int n=ans.size();
         vector<vector<int>>res;
-        // int i=0;
-        // while(i<n-1){
-        //     if(ans[i]!=ans[i+1])
-        //         res.push_back(ans[i]);
-        //     i++;
-        // }
-        // res.push_back(ans[i]);
-        //  return res;
-        return ans;
+        int i=0;
+        sort(ans.begin(),ans.end());
+        while(i<n){
+            if(i+1==n||ans[i]!=ans[i+1])
+                res.push_back(ans[i]);
+            i++;
+        }
+        
+         return res;
+        // return ans;
     }
 };
