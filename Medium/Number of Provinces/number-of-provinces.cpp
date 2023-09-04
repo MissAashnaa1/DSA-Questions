@@ -10,9 +10,9 @@ class Solution {
     void dfs(vector<vector<int>>&adj,int ind,vector<bool>&vis){
         
         vis[ind]=true;
-        for(auto it :adj[ind]){
-            if(!vis[it]){
-                dfs(adj,it,vis);
+        for(int i=0;i<adj[ind].size();i++){
+            if(!vis[adj[ind][i]]){
+                dfs(adj,adj[ind][i],vis);
             }
         }
         return;
@@ -42,6 +42,7 @@ class Solution {
         return provinces;
     }
 };
+
 
 //{ Driver Code Starts.
 
