@@ -7,52 +7,39 @@ using namespace std;
 //User function Template for C++
 
 class Solution {
-    int findParent(vector<int>&parent,int u){
-        if(u==parent[u]){
-            return u;
+    void dfs(vector<vector<int>>&adj,int ind,vector<bool>&vis){
+        
+        vis[ind]=true;
+        for(auto it :adj[ind]){
+            if(!vis[it]){
+                dfs(adj,it,vis);
+            }
         }
-        return parent[u]=findParent(parent,parent[u]);
-    }
-    void unionSet(int u,int v,vector<int>&parent,vector<int>&rank){
-        int paru=findParent(parent,u);
-        int parv=findParent(parent,v);
-        if(rank[u]<rank[v]){
-            parent[paru]=parv;
-            
-        }
-        else if(rank[v]<rank[u]){
-            parent[parv]=paru;
-        }
-        else{
-            rank[v]++;
-            parent[paru]=parv;
-        }
+        return;
     }
   public:
     int numProvinces(vector<vector<int>> adj, int V) {
         // code here
-        vector<int>parent(V);
-        vector<int>rank(V,0);
-        for(int i=0;i<V;i++){
-            parent[i]=i;
-        }
-        for(int i=0;i<adj.size();i++){
-            for(int j=0;j<adj[0].size();j++){
-                if(adj[i][j]==1&&i!=j){
-                    int paru=findParent(parent,i);
-                    int parv=findParent(parent,j);
-                    if(paru!=parv)
-                    unionSet(i,j,parent,rank);
+        vector<vector<int>>adl(V);
+        vector<bool>vis(V,false);
+        for(int u=0;u<V;u++){
+            for(int v=0;v<V;v++){
+                if(u!=v&&adj[u][v]==1){
                     
+                    adl[u].push_back(v);
+                    adl[v].push_back(u);
                 }
             }
         }
-        int ans=0;
+        int provinces=0;
         for(int i=0;i<V;i++){
-            if(parent[i]==i)
-                ans++;
+            if(vis[i]==false){
+                dfs(adl,i,vis);
+                provinces++;
+            }
+            
         }
-        return ans;
+        return provinces;
     }
 };
 
