@@ -7,42 +7,41 @@ using namespace std;
 //User function Template for C++
 
 class Solution {
-    void dfs(vector<vector<int>>&adj,int ind,vector<bool>&vis){
-        
-        vis[ind]=true;
-        for(int i=0;i<adj[ind].size();i++){
-            if(!vis[adj[ind][i]]){
-                dfs(adj,adj[ind][i],vis);
+    private:
+        void func(vector<vector<int>>adl, int ind, vector<bool>&vis){
+            vis[ind] = true;
+            for(int i=0;i<adl[ind].size();i++){
+                if(!vis[adl[ind][i]]){
+                    func(adl,adl[ind][i], vis);
+                }
             }
+            return;
         }
-        return;
-    }
+    
   public:
     int numProvinces(vector<vector<int>> adj, int V) {
         // code here
         vector<vector<int>>adl(V);
         vector<bool>vis(V,false);
+        
         for(int u=0;u<V;u++){
             for(int v=0;v<V;v++){
-                if(u!=v&&adj[u][v]==1){
-                    
+                if(u!=v && adj[u][v]==1){
                     adl[u].push_back(v);
-                    adl[v].push_back(u);
+                    
                 }
             }
         }
-        int provinces=0;
+        int cnt = 0;
         for(int i=0;i<V;i++){
-            if(vis[i]==false){
-                dfs(adl,i,vis);
-                provinces++;
+            if(!vis[i]){
+                func(adl,i,vis);
+                cnt++;
             }
-            
         }
-        return provinces;
+        return cnt;
     }
 };
-
 
 //{ Driver Code Starts.
 
