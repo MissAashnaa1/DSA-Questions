@@ -23,6 +23,8 @@ public:
                 bool notTake=prev[target];
                 curr[target]=take||notTake;
             }
+            if(curr[sum])
+                return true;
             prev=curr;
         }
         return prev[sum];
