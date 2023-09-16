@@ -5,7 +5,7 @@ public:
         for(int i=0;i<arr.size();i++)
             sum+=arr[i];
             cout<<sum;
-            if(!(sum%2))
+            if((sum%2)==0)
                 sum=sum/2;
             else return false;
 
