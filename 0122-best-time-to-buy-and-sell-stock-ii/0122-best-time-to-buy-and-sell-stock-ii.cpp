@@ -21,8 +21,9 @@ public:
         // vector<vector<int>>dp(prices.size()+1,vector<int>(2,0));
     //   return  helper(prices,0,1,dp);
     vector<int>dp(2,0);
+    vector<int>ndp(2,0);
     for(int index=prices.size()-1;index>=0;index--){
-        vector<int>ndp(2,0);
+        
         for(int buy=0;buy<=1;buy++){
                   if(buy==1){//can buy
             int buyy=-prices[index]+dp[0];//bought
