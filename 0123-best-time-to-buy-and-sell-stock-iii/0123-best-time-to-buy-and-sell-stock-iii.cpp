@@ -5,8 +5,9 @@ public:
         // vector<vector<vector<int>>>dp(prices.size()+1,             vector<vector<int>>(2,
         // vector<int>(4,0)));
         vector<vector<int>>next(2,vector<int>(3,0));
+        vector<vector<int>>curr(2,vector<int>(3,0));
         for(int index=prices.size()-1;index>=0;index--){
-            vector<vector<int>>curr(2,vector<int>(3,0));
+            
             for(int buy=0;buy<=1;buy++){
                 for(int cap=1;cap>=0;cap--){
         if(buy==1){//cap<2
