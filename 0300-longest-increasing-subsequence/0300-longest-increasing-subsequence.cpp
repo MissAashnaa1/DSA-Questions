@@ -1,27 +1,19 @@
 class Solution {
-    int getAns(vector<int>& arr,  int ind, int prev_index, vector<vector<int>>& dp){
-    
-    // base condition
-    if(ind == arr.size())
-        return 0;
-        
-    if(dp[ind][prev_index+1]!=-1)
-        return dp[ind][prev_index+1];
-    
-    int notTake = 0 + getAns(arr,ind+1,prev_index,dp);
-    
-    int take = 0;
-    
-    if(prev_index == -1 || arr[ind] > arr[prev_index]){
-        take = 1 + getAns(arr,ind+1,ind,dp);
-    }
-    
-    return dp[ind][prev_index+1] = max(notTake,take);
-}
 public:
-    int lengthOfLIS(vector<int>& nums) {
-        vector<vector<int>> dp(nums.size(),vector<int>(nums.size()+1,-1));
+    int lengthOfLIS(vector<int>& arr) {
+        int n=arr.size();
+      vector<int> temp;
+      temp.push_back(arr[0]);
+      for(int i=1;i<n;i++){
+          if(arr[i]>temp.back()){
+              temp.push_back(arr[i]);
+          }
+          else {
+              int ind=lower_bound(temp.begin(),temp.end(),arr[i])-temp.begin();
+              temp[ind]=arr[i];
+          }
+      }
+      return temp.size();
     
-    return getAns(nums,0,-1,dp);
     }
 };
