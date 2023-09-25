@@ -8,25 +8,33 @@ class Solution {
   public:
     vector<int> maxCombinations(int N, int K, vector<int> &A, vector<int> &B) {
         // code here
-         sort(A.begin(),A.end());
+        sort(A.begin(),A.end());
         sort(B.begin(),B.end());
         
         vector<int>ans;
-        priority_queue<pair<int,int>>pq;
-        for(int i=0;i<N;i++)
-        {
-            int sum = A[i]+B[N-1];
-            pq.push({sum,N-1});
-        }
+        priority_queue<pair<int,pair<int,int>>>pq;
         
+        pq.push({A[N-1]+B[N-1],{N-1,N-1}});
+        set<pair<int,int>>s;
+        s.insert({N-1,N-1});
         while(!pq.empty() and K--)
         {
             int sum = pq.top().first;
-            int idx = pq.top().second;
+            int x = pq.top().second.first;
+            int y=  pq.top().second.second;
             pq.pop();
             ans.push_back(sum);
-            if(idx-1>=0)
-            pq.push({sum-B[idx]+B[idx-1], idx-1});
+            if(s.find({x-1,y})==s.end()){
+                pq.push({A[x-1]+B[y],{x-1,y}});
+                s.insert({x-1,y});
+            }
+            if(s.find({x,y-1})==s.end()){
+                pq.push({A[x]+B[y-1],{x,y-1}});
+                s.insert({x,y-1});
+            }
+           
+            
+            
         }
         return ans;
     }
