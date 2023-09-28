@@ -8,11 +8,9 @@ class Solution {
         }
         int maxCost=INT_MIN;
         for(int i=left;i<=right;i++){
-            int currBurst=nums[left-1]*nums[i]*nums[right+1];
-            int leftCost=helper(left,i-1,nums,dp);
-            int rightCost=helper(i+1,right,nums,dp);
-            int tempCost=currBurst+leftCost+rightCost;
-            maxCost=max(maxCost,tempCost);
+           
+        
+            maxCost=max(maxCost,nums[left-1]*nums[i]*nums[right+1]+helper(left,i-1,nums,dp)+helper(i+1,right,nums,dp));
         }
         return dp[left][right]=maxCost;
     }
