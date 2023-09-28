@@ -19,7 +19,7 @@ public:
       
         nums.insert(nums.begin(),1);
         nums.push_back(1);
-        vector<vector<int>>dp(nums.size()+1,vector<int>(nums.size()+1,-1));
+        vector<vector<int>>dp(nums.size(),vector<int>(nums.size(),-1));
         return helper(1,nums.size()-2,nums,dp);
     }
 };
