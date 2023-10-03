@@ -33,18 +33,18 @@ class Solution {
                int maxNum=0;
                Node *node=root;
               for(int i=31;i>=0;i--){
-                  int bit=num>>i&1;
+                  int bit=(num>>i)&1;
                   if(node->containsKey(!bit)){
-                     maxNum=maxNum|!bit<<i;
+                     maxNum=maxNum|1<<i;
                       node=node->get(!bit);
                   }
                   else{
-                   maxNum=maxNum|bit<<i;
+                //    maxNum=maxNum|bit<<i;
                       node=node->get(bit);
                   }
               }
               
-              return maxNum^num;
+              return maxNum;
            }
        };
       
