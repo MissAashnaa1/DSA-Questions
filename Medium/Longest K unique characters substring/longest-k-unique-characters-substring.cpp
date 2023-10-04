@@ -10,39 +10,26 @@ using namespace std;
 class Solution{
   public:
     int longestKSubstr(string s, int k) {
-    // your code here
-    unordered_map<int,int>m;
-		int i=0;
-        int j=0;
-        int ans=-1;
+    // your code 
+    int i=0;
+    int j=0;
+    int maxlen=-1; 
+    unordered_map<char,int>m;
         while(j<s.length()){
             m[s[j]]++;
-            if(m.size()<k){
-               
-                j++;
-            
-            }
-            
-            else if(m.size()==k){
-                
-                ans=max(ans,j-i+1);
-                
-                j++;
-                
-                
-            }
-            else if(m.size()>k){
-                
-                m[s[i]]--;
-                if(m[s[i]]==0)
+        
+            while(m.size()>k){
+            m[s[i]]--;
+                if(m[s[i]]==0){
                     m.erase(s[i]);
+                }
                 i++;
-                j++;
-                
             }
-            
+            if(m.size()==k)
+        maxlen=max(maxlen,j-i+1);
+        j++;
         }
-        return ans;
+        return maxlen;
     }
 };
 
