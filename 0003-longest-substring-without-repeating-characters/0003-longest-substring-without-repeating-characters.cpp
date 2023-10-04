@@ -5,7 +5,7 @@ public:
     int i=0;
     int j=0;
     int maxl=0;
-    unordered_map<char,int>m;
+    map<char,int>m;
     while(j<s.length()){
         m[s[j]]++;
         if(j-i+1==m.size()){
