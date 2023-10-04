@@ -4,7 +4,7 @@ public:
     int i=0;
     int j=0;
     int maxl=0;
-    map<int,int>m;
+    unordered_map<int,int>m;
     while(j<fruits.size()){
     
         m[fruits[j]]++;
