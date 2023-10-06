@@ -14,7 +14,8 @@ public:
             for(int i=0;i<k;i++){
                 minHeap.push(nums[i]);
             }
-            for(int i=k;i<nums.size();i++){
+            int n=nums.size();
+            for(int i=k;i<n;i++){
                 if(minHeap.top()<nums[i]){
                     minHeap.pop();
                     minHeap.push(nums[i]);
