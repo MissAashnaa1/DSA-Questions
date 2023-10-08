@@ -8,18 +8,15 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class cmp{
-    public:
-    bool operator() (ListNode *a,ListNode *b){
-        return a->val>b->val;
-    }
-};
+
 class Solution {
    
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         ListNode* dummy=new ListNode(-1);
-        priority_queue<ListNode*,vector<ListNode*>,cmp>pq;
+        priority_queue<ListNode*, vector<ListNode*>, function<bool(ListNode*, ListNode*)>> pq([](ListNode *a, ListNode *b) {
+    return a->val > b->val;
+});
         
         ListNode* curr=dummy;
         for(auto Hnode : lists){
