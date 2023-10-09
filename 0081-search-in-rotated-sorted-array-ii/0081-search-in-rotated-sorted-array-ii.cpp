@@ -6,7 +6,7 @@ public:
         
         while(low<=high){
             int mid=(high+low) / 2;
-            cout<<low<<" "<<mid<<" "<<high<<endl;
+           
              if(arr[mid]==target){
                 return true;
             }
@@ -21,12 +21,12 @@ public:
                 if(arr[low]<=target&&target<=arr[mid]){
                     
                     high=mid-1;
-                    cout<<high<<endl;
+                  
                 }
                 else{
                     
                     low=mid+1;
-                    cout<<low<<endl;
+                 
                 }
             }
             else{
