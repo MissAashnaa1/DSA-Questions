@@ -7,8 +7,12 @@ public:
         
         while(low<=high){
             int mid=(high+low) / 2;
-        
-            if(arr[low]<=arr[mid]){
+            if(arr[low]<=arr[high]){
+                
+                ans=min(ans,arr[low]);
+               break;
+            }
+             if(arr[low]<=arr[mid]){
                     ans=min(arr[low],ans);
                     low=mid+1;
              
