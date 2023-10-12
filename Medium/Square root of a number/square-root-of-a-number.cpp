@@ -30,7 +30,7 @@ class Solution{
                 return ans;
             }
         }
-        return ans;
+        return high;
         // Your code goes here   
     }
 };
