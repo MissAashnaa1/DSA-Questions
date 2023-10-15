@@ -7,29 +7,22 @@ public:
     }
     
     void push(int x) {
-        // if(s.size()==0){
-        //     s.push(x);
-        //     return;
-        // }
-        // int ele=s.top();
-        // s.pop();
-        // push(x);
-        // s.push(x);
-        stack<int>temp;
-        while (!s.empty()) {
-        temp.push(s.top());
+        if(s.size()==0){
+            s.push(x);
+            return;
+        }
+        int ele=s.top();
         s.pop();
+        push(x);
+        s.push(ele);
+       
     }
 
     // Push the new element onto the original stack
-    s.push(x);
+  
 
-    // Move the elements back from the temporary stack to the original stack
-    while (!temp.empty()) {
-        s.push(temp.top());
-        temp.pop();
-    }
-    }
+    // Move the elements back from the temporary stack to the original stacp
+    
     
     int pop() {
         if(s.empty()){
