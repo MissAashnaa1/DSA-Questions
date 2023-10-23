@@ -49,7 +49,7 @@ public:
             while(dummy->next){
                  dummy=dummy->next;
             }
-            dummy=node;
+            // dummy=node;
             node=nex;
             count=0;
 
