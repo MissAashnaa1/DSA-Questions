@@ -12,20 +12,21 @@ public:
     int knapSack(int N, int W, int val[], int wt[])
     {
         // code here
-            vector<int> prev(W+1,0);
-        for(int i =0 ; i<= W ; i++){
-               prev[i] = (i/wt[0] * val[0]);
-        }
-    
-        for(int ind =1; ind< N; ind++){
-            for(int j = 0; j  <= W; j++){
-                    int take = -1e9;
-                    if(j >= wt[ind]) take  = val[ind] + prev[j - wt[ind]];
-                    int notpick = prev[j];
-                    prev[j] = max(take, notpick);
+            vector<int> dp(W+1,0);
+            for(int i=0;i<=W;i++){
+                dp[i]=(i/wt[0])*val[0];
             }
-        }
-        return prev[W];
+             
+            for(int i=1;i<N;i++){
+                for(int target=0;target<=W;target++){
+                       int notTake=dp[target];
+                       int take=-1e9;
+                       if(wt[i]<=target)
+                         take=  val[i]+dp[target-wt[i]];
+                       dp[target]=max(take, notTake);
+                }
+            }
+            return dp[W];
     }
 };
 
