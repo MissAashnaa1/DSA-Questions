@@ -1,0 +1,31 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+long long int countStr(long long int n);
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        long long int n;
+        cin >> n;
+        cout << countStr(n) << endl;
+    }
+return 0;
+}
+// } Driver Code Ends
+
+const int mod=1e9+7;
+long long int perm(int n){
+    long long int prev=1;
+    for(int i=2;i<=n;i++){
+        prev=prev*i;
+    }
+    return prev;
+}
+long long int countStr(long long int n){
+    //complete the function here
+    
+     if (n==1) return 3;
+    return 1 + 2*n + n*(n-1)/2 + n*(n-1) + ((n*(n-1)*(n-2)))/2;
+}
