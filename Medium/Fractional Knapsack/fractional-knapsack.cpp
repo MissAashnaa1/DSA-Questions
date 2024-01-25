@@ -25,27 +25,30 @@ class Solution
     double fractionalKnapsack(int W, Item arr[], int n)
     {
         // Your code here
-      sort(arr, arr + n, [&](const Item &a, const Item &b) {
-        return (double)a.value / a.weight > (double)b.value / b.weight;
-    });
-
-       double ans=0;
-       
+        double ans=0;
+       vector<pair<double,int>> v;
        for(int i=0;i<n;i++){
-           
-           if(W-arr[i].weight<0){
-                double l= (((double)W / arr[i].weight) * arr[i].value);
-                
-            return ans+l;
+           double a=arr[i].value;
+           double b=arr[i].weight;
+           double c=a/b;
+           v.push_back({c,i});
+        //   cout<<c<<endl;
+       }
+       sort(v.begin(),v.end());
+       for(int i=n-1;i>=0;i--){
+           if(W<arr[v[i].second].weight){
+               double a=W;
+               
+               ans+=a*v[i].first;
+               break;
            }
            else{
-               ans+=arr[i].value;
-           W-=arr[i].weight;
-           
+               ans+=arr[v[i].second].value;
+               W-=arr[v[i].second].weight;
            }
-           
+        //   cout<<W<<endl;
        }
-        return ans;
+       return ans;
     }
         
 };
@@ -57,7 +60,7 @@ int main()
 	int t;
 	//taking testcases
 	cin>>t;
-	cout<<setprecision(2)<<fixed;
+	cout<<setprecision(6)<<fixed;
 	while(t--){
 	    //size of array and weight
 		int n, W;
