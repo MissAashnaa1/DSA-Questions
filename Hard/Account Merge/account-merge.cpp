@@ -1,58 +1,55 @@
 //{ Driver Code Starts
-//Initial Template for C++
+// Initial Template for C++
 #include <bits/stdc++.h>
 using namespace std;
 
-// } Driver Code Ends
-//User function Template for C++
 
+// } Driver Code Ends
+// User function Template for C++
+
+class DisjointSet{
+    public:
+	    vector<int> rank,parent;
+	    DisjointSet(int n){
+	        rank.resize(n+1,0);
+	        parent.resize(n+1);
+	        for(int i=0;i<=n;i++)parent[i]=i;
+	    }
+	    int findUpar(int node){
+	        if(node==parent[node])return node;
+	        return parent[node]=findUpar(parent[node]);
+	    }
+	    void Unionbyrank(int u,int v){
+	        int u_v=findUpar(u);
+	        int u_u=findUpar(v);
+	        if(u_v==u_u)return;
+	        if(rank[u_v]>rank[u_u])parent[u_u]=u_v;
+	        else if(rank[u_v]<rank[u_u])parent[u_v]=u_u;
+	        else{
+	            parent[u_v]=u_u;
+	            rank[u_u]++;
+	        }
+	    }
+	};
 class Solution{
-    int findParent(vector<int>&parent,int u){
-        if(u==parent[u]){
-            return u;
-        }
-        return parent[u]=findParent(parent,parent[u]);
-    }
-    void unionSet(int u,int v,vector<int>&parent,vector<int>&rank){
-        int paru=findParent(parent,u);
-        int parv=findParent(parent,v);
-        if(rank[u]<rank[v]){
-            parent[paru]=parv;
-            
-        }
-        else if(rank[v]<rank[u]){
-            parent[parv]=paru;
-        }
-        else{
-            rank[v]++;
-            parent[paru]=parv;
-        }
-    }
   public:
     vector<vector<string>> accountsMerge(vector<vector<string>> &accounts) {
-        // code here
-        int n=accounts.size();
-        vector<int>rank(n,0);
-        vector<int>parent(n,0);
-        map<string,int>m;
-        for(int i=0;i<n;i++)
-            parent[i]=i;
+        int  n=accounts.size();
+        unordered_map<string,int> helper;
+        DisjointSet ds(n);
         for(int i=0;i<n;i++){
             for(int j=1;j<accounts[i].size();j++){
+                string mail=accounts[i][j];
+                if(helper.find(mail)==helper.end())helper[mail]=i;
+                else ds.Unionbyrank(i,helper[mail]);
                 
-                if(m.find(accounts[i][j])==m.end()){
-                    m[accounts[i][j]]=i;
-                }
-                else{
-                    unionSet(m[accounts[i][j]],i,parent,rank);
-                }
             }
         }
-        vector<vector<string>>ans;
+        vector<vector<string>> ans;
         vector<string> merged[n];
-        for(auto it:m){
+        for(auto it:helper){
             string mail=it.first;
-            int node=findParent(parent,it.second);
+            int node=ds.findUpar(it.second);
             merged[node].push_back(mail);
         }
         for(int i=0;i<n;i++){
@@ -71,53 +68,47 @@ class Solution{
 
 
 //{ Driver Code Starts.
-int main()
-{
-  int t;
-  cin >> t;
-  while (t--)
-  {
-    int n;
-    cin >> n;
-    vector<vector<string>> accounts;
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<vector<string>> accounts;
 
-    for (int i = 0; i < n; i++)
-    {
-      vector<string> temp;
-      int x;
-      cin >> x;
+        for (int i = 0; i < n; i++) {
+            vector<string> temp;
+            int x;
+            cin >> x;
 
-      for (int j = 0; j < x; j++)
-      {
-        string s1;
-        cin >> s1;
-        temp.push_back(s1);
-      }
-      accounts.push_back(temp);
+            for (int j = 0; j < x; j++) {
+                string s1;
+                cin >> s1;
+                temp.push_back(s1);
+            }
+            accounts.push_back(temp);
+        }
+
+        ///
+        Solution obj;
+        vector<vector<string>> res = obj.accountsMerge(accounts);
+        sort(res.begin(), res.end());
+        cout << "[";
+        for (int i = 0; i < res.size(); ++i) {
+            cout << "[";
+            for (int j = 0; j < res[i].size(); j++) {
+                if (j != res[i].size() - 1)
+                    cout << res[i][j] << ","
+                         << " ";
+                else
+                    cout << res[i][j];
+            }
+            if (i != res.size() - 1)
+                cout << "], " << endl;
+            else
+                cout << "]";
+        }
+        cout << "]" << endl;
     }
-
-    Solution obj;
-    vector<vector<string>> res = obj.accountsMerge(accounts);
-    sort(res.begin(), res.end());
-    cout << "[";
-    for (int i = 0; i < res.size(); ++i)
-    {
-      cout << "[";
-      for (int j = 0; j < res[i].size(); j++)
-      {
-        if (j != res[i].size() - 1)
-          cout << res[i][j] << ","
-               << " ";
-        else
-          cout << res[i][j];
-      }
-      if (i != res.size() - 1)
-        cout << "], " << endl;
-      else
-        cout << "]";
-    }
-    cout << "]"
-         << endl;
-  }
 }
 // } Driver Code Ends
