@@ -22,4 +22,24 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1701-remove-max-number-of-edges-to-keep-graph-fully-traversable](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1701-remove-max-number-of-edges-to-keep-graph-fully-traversable) |
+## Array
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+## Hash Table
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+## Two Pointers
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+## Binary Search
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+## Sorting
+|  |
+| ------- |
+| [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
 <!---LeetCode Topics End-->
