@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1431-all-ancestors-of-a-node-in-a-directed-acyclic-graph) |
+| [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -81,9 +82,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0726-number-of-atoms](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0726-number-of-atoms) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
+| [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 ## Stack
 |  |
 | ------- |
 | [0726-number-of-atoms](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0726-number-of-atoms) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
+## Tree
+|  |
+| ------- |
+| [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
+## Binary Tree
+|  |
+| ------- |
+| [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
 <!---LeetCode Topics End-->
