@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0921-spiral-matrix-iii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0948-sort-an-array) |
 | [1207-delete-nodes-and-return-forest](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1207-delete-nodes-and-return-forest) |
 | [1333-sort-the-jumbled-numbers](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1333-sort-the-jumbled-numbers) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0921-spiral-matrix-iii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0921-spiral-matrix-iii) |
 | [1803-average-waiting-time](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1803-average-waiting-time) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2299-merge-nodes-in-between-zeros](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2299-merge-nodes-in-between-zeros) |
@@ -136,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0921-spiral-matrix-iii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0921-spiral-matrix-iii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [2472-build-a-matrix-with-conditions](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2472-build-a-matrix-with-conditions) |
 ## Divide and Conquer
