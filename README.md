@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0921-spiral-matrix-iii) |
 | [0948-sort-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0948-sort-an-array) |
 | [1207-delete-nodes-and-return-forest](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1207-delete-nodes-and-return-forest) |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0350-intersection-of-two-arrays-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0726-number-of-atoms](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0726-number-of-atoms) |
+| [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
 | [1207-delete-nodes-and-return-forest](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1207-delete-nodes-and-return-forest) |
 | [1556-make-two-arrays-equal-by-reversing-subarrays](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1556-make-two-arrays-equal-by-reversing-subarrays) |
 | [2502-sort-the-people](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2502-sort-the-people) |
@@ -99,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2645-pass-the-pillow) |
 ## Recursion
@@ -138,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
 | [0921-spiral-matrix-iii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0921-spiral-matrix-iii) |
 | [1496-lucky-numbers-in-a-matrix](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1496-lucky-numbers-in-a-matrix) |
 | [2472-build-a-matrix-with-conditions](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2472-build-a-matrix-with-conditions) |
