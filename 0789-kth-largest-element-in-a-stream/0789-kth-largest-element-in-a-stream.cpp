@@ -1,38 +1,29 @@
 class KthLargest {
-    priority_queue<int,vector<int>,greater<int>>pq;
-    int maxLim=0;
-
 public:
-    KthLargest(int k, vector<int>& nums) {
-        maxLim=k;
-        for(auto num : nums){
-            if(pq.size()<k){
-                pq.push(num);
-            }
-            else if(pq.top()<num){
-                pq.pop();
-                pq.push(num);
+    KthLargest(int k, vector<int>& nums) : k(k) {
+        for (int num : nums) {
+            if (minHeap.size() < k) {
+                minHeap.push(num);
+            } else if (num > minHeap.top()) {
+                minHeap.push(num);
+                if (minHeap.size() > k) {
+                    minHeap.pop();
+                }
             }
         }
     }
-    
-    int add(int val) {
-        if(pq.size()<maxLim){
-            pq.push(val);
-        }
-        else if(pq.top()<val){
-            pq.pop();
-            pq.push(val);
-        }
-        if(pq.size()<maxLim){
-            return -1;
-        }
-        return pq.top();
-    }
-};
 
-/**
- * Your KthLargest object will be instantiated and called as such:
- * KthLargest* obj = new KthLargest(k, nums);
- * int param_1 = obj->add(val);
- */
+    int add(int val) {
+        if (minHeap.size() < k) {
+            minHeap.push(val);
+        } else if (val > minHeap.top()) {
+            minHeap.push(val);
+            minHeap.pop();
+        }
+        return minHeap.top();
+    }
+
+private:
+    int k;
+    priority_queue<int, vector<int>, greater<int>> minHeap;  // Min-heap to store the k largest elements
+};
