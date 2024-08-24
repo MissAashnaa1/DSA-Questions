@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0264-ugly-number-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0264-ugly-number-ii) |
+| [0564-find-the-closest-palindrome](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0650-2-keys-keyboard](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
@@ -137,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0564-find-the-closest-palindrome](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0564-find-the-closest-palindrome) |
 | [0592-fraction-addition-and-subtraction](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0592-fraction-addition-and-subtraction) |
 | [0726-number-of-atoms](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0726-number-of-atoms) |
 | [1298-reverse-substrings-between-each-pair-of-parentheses](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1298-reverse-substrings-between-each-pair-of-parentheses) |
