@@ -28,11 +28,12 @@ public:
             return {};
         }
         stack<TreeNode*>st1;
-        stack<int>st2;
+        
+         vector<int>v;
         st1.push(root);
         while(st1.size()){
             TreeNode* node=st1.top();
-            st2.push(node->val);
+            v.push_back(node->val);
             st1.pop();
             if(node->left){
                 st1.push(node->left);
@@ -42,11 +43,9 @@ public:
                 st1.push(node->right);
             }
         }
-        vector<int>v;
-        while(st2.size()){
-            v.push_back(st2.top());
-            st2.pop();
-        }
+       
+        reverse(v.begin(),v.end());
+        
         return v;
     }
 
