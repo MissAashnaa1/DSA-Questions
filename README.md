@@ -126,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2299-merge-nodes-in-between-zeros](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2299-merge-nodes-in-between-zeros) |
 | [2411-spiral-matrix-iv](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2411-spiral-matrix-iv) |
+| [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Simulation
 |  |
@@ -151,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1240-stone-game-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1240-stone-game-ii) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2645-pass-the-pillow) |
+| [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Recursion
 |  |
 | ------- |
@@ -284,4 +286,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0476-number-complement](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0476-number-complement) |
+## Number Theory
+|  |
+| ------- |
+| [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 <!---LeetCode Topics End-->
