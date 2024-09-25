@@ -76,6 +76,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2132-convert-1d-array-into-2d-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2132-convert-1d-array-into-2d-array) |
 | [2411-spiral-matrix-iv](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2411-spiral-matrix-iv) |
 | [2472-build-a-matrix-with-conditions](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2472-build-a-matrix-with-conditions) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2502-sort-the-people](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2755-extra-characters-in-a-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2755-extra-characters-in-a-string) |
@@ -192,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1786-count-the-number-of-consistent-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2076-sum-of-digits-of-string-after-convert](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2076-sum-of-digits-of-string-after-convert) |
 | [2217-step-by-step-directions-from-a-binary-tree-node-to-another](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2217-step-by-step-directions-from-a-binary-tree-node-to-another) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2502-sort-the-people](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2502-sort-the-people) |
 | [2755-extra-characters-in-a-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2755-extra-characters-in-a-string) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3235-minimum-cost-to-convert-string-i) |
@@ -258,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0920-uncommon-words-from-two-sentences](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0948-sort-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0948-sort-an-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1786-count-the-number-of-consistent-strings) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
 ## Dynamic Programming
 |  |
@@ -334,5 +337,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+| [2494-sum-of-prefix-scores-of-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2755-extra-characters-in-a-string) |
 <!---LeetCode Topics End-->
