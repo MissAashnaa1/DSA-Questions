@@ -76,31 +76,28 @@ struct Node* XOR (struct Node *a, struct Node *b)
 // function should insert the data to the front of the list
 struct Node *insert(struct Node *head, int data) {
     // Code here
+    Node* root;
     if(head==NULL){
-        struct Node* nNode = new Node(data);
-        nNode->npx=XOR(NULL,NULL);
-        head=nNode;
-        return head;
-    }else{
-        struct Node* nNode = new Node(data);
-        nNode->npx=XOR(nNode->npx,head);
-        head->npx=XOR(head->npx,XOR(nNode,NULL));
-        head=nNode;
-        return head;
+        root=new Node(data);
     }
+    else{
+        root=new Node(data);
+        root->npx=XOR(root,head);
+    }
+    head=root;
+    return head;
 }
 
 vector<int> getList(struct Node *head) {
-    // Code here
-    vector<int> ans;
-    struct Node* p =NULL;
-    struct Node* prev=NULL;
-    struct Node* temp = head;
-    while(temp){
-        ans.push_back(temp->data);
-        prev=temp;
-        temp=XOR(temp->npx,p);
-        p=prev;
+    vector<int>ans;
+    if(head==NULL){
+        return ans;
     }
+    Node* root=head;
+    while(root->npx!=NULL){
+        ans.push_back(root->data);
+        root=XOR(root,root->npx);
+    }
+    ans.push_back(root->data);
     return ans;
 }
