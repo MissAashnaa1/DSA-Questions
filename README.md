@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2502-sort-the-people](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2502-sort-the-people) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2616-maximal-score-after-applying-k-operations) |
+| [2676-find-the-score-of-all-prefixes-of-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2676-find-the-score-of-all-prefixes-of-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2755-extra-characters-in-a-string) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -368,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1694-make-sum-divisible-by-p) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2676-find-the-score-of-all-prefixes-of-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2676-find-the-score-of-all-prefixes-of-an-array) |
 ## Game Theory
 |  |
 | ------- |
