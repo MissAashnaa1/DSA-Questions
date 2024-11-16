@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2755-extra-characters-in-a-string) |
 | [3235-minimum-cost-to-convert-string-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3235-minimum-cost-to-convert-string-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
+| [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -442,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0567-permutation-in-string](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0567-permutation-in-string) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Monotonic Stack
 |  |
 | ------- |
