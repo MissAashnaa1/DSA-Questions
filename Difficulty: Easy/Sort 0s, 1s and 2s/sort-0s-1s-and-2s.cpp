@@ -7,21 +7,28 @@ using namespace std;
 class Solution {
   public:
     void sort012(vector<int>& arr) {
-        int i=0,n=arr.size(),zero=0,two=n-1;
-        while(i<=two)
+        
+        int n = arr.size();
+        int i=-1,j=0,k=n-1;
+        //Use dutch national flag algorithm
+        
+        while(i<=j and j<=k)
         {
-            if(arr[i]==0)
+            if(arr[j] == 0)
             {
-                swap(arr[i],arr[zero]);
-                zero++;
+                i++;
+                swap(arr[i],arr[j]);
+                j++;
             }
-            else if(arr[i]==2)
+            else if(arr[j] == 2)
             {
-                swap(arr[i],arr[two]);
-                two--;
-                i--;
+                swap(arr[j],arr[k]);
+                k--;
             }
-            i++;
+            else
+            {
+                j++;
+            }
         }
     }
 };
@@ -52,6 +59,7 @@ int main() {
         }
 
         cout << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
