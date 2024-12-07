@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1803-average-waiting-time](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1803-average-waiting-time) |
+| [1886-minimum-limit-of-balls-in-a-bag](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2035-count-sub-islands](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2035-count-sub-islands) |
@@ -178,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1615-range-sum-of-sorted-subarray-sums](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1615-range-sum-of-sorted-subarray-sums) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1886-minimum-limit-of-balls-in-a-bag](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2006-find-the-student-that-will-replace-the-chalk](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2006-find-the-student-that-will-replace-the-chalk) |
 | [2586-longest-square-streak-in-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2586-longest-square-streak-in-an-array) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
