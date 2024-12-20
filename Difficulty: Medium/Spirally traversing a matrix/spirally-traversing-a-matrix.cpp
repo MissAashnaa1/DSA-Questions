@@ -9,39 +9,45 @@ class Solution {
      vector<int> spirallyTraverse(vector<vector<int> > &matrix) {
         // code here
         vector<int> ans;
-        int left = 0, right = matrix[0].size()-1, top =0, bottom = matrix.size()-1;
-        int direction =0;
-        while(left<=right && top<= bottom){
-            //move left to right
-            if(direction==0){
-                for(int i=left;i<=right;i++){
-                    ans.push_back(matrix[top][i]);
-                }
-                top++;
-            }
-            // move top to bottom
-            else if(direction==1){
-                for(int i=top;i<=bottom;i++){
-                    ans.push_back(matrix[i][right]);
-                }
-                right--;
-            }
-            // move right to left
-            else if(direction==2){
-                for(int i=right;i>=left;i--){
-                    ans.push_back(matrix[bottom][i]);
-                }
-                bottom--;
-            }
-            //move boottom to top
-            else if(direction==3){
-                for(int i=bottom;i>=top;i--){
-                    ans.push_back(matrix[i][left]);
-                }
-                left++;
-            }
-            direction = (direction+1)%4;
+        int row = matrix.size();
+        int col = matrix[0].size();
+        int count = 0;
+        int total = row * col;
+        int startingRow = 0;
+        int startingCol = 0;
+        int endingRow = row - 1;
+        int endingCol = col - 1;
+    
+        while (count < total) {
+          for (int index = startingCol; index <= endingCol && count < total;index++) 
+          {
+            ans.push_back(matrix[startingRow][index]);
+            count++;
+          }
+          startingRow++;
+    
+          for (int index = startingRow; index <= endingRow && count < total;index++) 
+          {
+            ans.push_back(matrix[index][endingCol]);
+            count++;
+          }
+          endingCol--;
+    
+          for (int index = endingCol; index >= startingCol && count < total;index--) 
+          {
+            ans.push_back(matrix[endingRow][index]);
+            count++;
+          }
+          endingRow--;
+    
+          for (int index = endingRow; index >= startingRow && count < total;index--) 
+          {
+            ans.push_back(matrix[index][startingCol]);
+            count++;
+          }
+          startingCol++;
         }
+    
         return ans;
     }
 };
@@ -54,9 +60,10 @@ int main() {
     while (t--) {
         int r, c;
         cin >> r >> c;
-        vector<vector<int>> matrix(r, vector<int>(c, 0));
+        vector<vector<int>> matrix(r);
 
         for (int i = 0; i < r; i++) {
+            matrix[i].assign(c, 0);
             for (int j = 0; j < c; j++) {
                 cin >> matrix[i][j];
             }
@@ -67,6 +74,9 @@ int main() {
         for (int i = 0; i < result.size(); ++i)
             cout << result[i] << " ";
         cout << endl;
+
+        cout << "~"
+             << "\n";
     }
     return 0;
 }
