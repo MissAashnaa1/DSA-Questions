@@ -358,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2645-pass-the-pillow) |
 | [2716-prime-subtraction-operation](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2716-prime-subtraction-operation) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Recursion
@@ -595,6 +596,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0040-combination-sum-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0040-combination-sum-ii) |
 | [0494-target-sum](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0494-target-sum) |
 | [1715-split-a-string-into-the-max-number-of-unique-substrings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1715-split-a-string-into-the-max-number-of-unique-substrings) |
+| [2802-find-the-punishment-number-of-an-integer](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Prefix Sum
 |  |
 | ------- |
