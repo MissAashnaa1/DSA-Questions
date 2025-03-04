@@ -373,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0650-2-keys-keyboard](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0650-2-keys-keyboard) |
 | [0870-magic-squares-in-grid](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0870-magic-squares-in-grid) |
 | [1240-stone-game-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1240-stone-game-ii) |
+| [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2645-pass-the-pillow](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2645-pass-the-pillow) |
 | [2716-prime-subtraction-operation](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2716-prime-subtraction-operation) |
