@@ -198,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3427-special-array-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
@@ -399,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/MissAashnaa1/DSA-Questions/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/MissAashnaa1/DSA-Questions/tree/master/1951-find-the-winner-of-the-circular-game) |
 | [2868-continuous-subarrays](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2868-continuous-subarrays) |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 ## String
 |  |
 | ------- |
@@ -659,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2676-find-the-score-of-all-prefixes-of-an-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2676-find-the-score-of-all-prefixes-of-an-array) |
 | [3427-special-array-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3427-special-array-ii) |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 ## Game Theory
 |  |
 | ------- |
@@ -674,6 +677,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2792-neighboring-bitwise-xor](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2792-neighboring-bitwise-xor) |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 ## Number Theory
 |  |
 | ------- |
@@ -709,6 +713,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2868-continuous-subarrays](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3267-find-longest-special-substring-that-occurs-thrice-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3267-find-longest-special-substring-that-occurs-thrice-i) |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Monotonic Stack
 |  |
