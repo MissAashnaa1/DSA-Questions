@@ -204,6 +204,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3427-special-array-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3429-special-array-i) |
+| [3430-count-days-without-meetings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3430-count-days-without-meetings) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2699-count-the-number-of-fair-pairs](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/MissAashnaa1/DSA-Questions/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3276-minimum-number-of-pushes-to-type-word-ii](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3276-minimum-number-of-pushes-to-type-word-ii) |
+| [3430-count-days-without-meetings](https://github.com/MissAashnaa1/DSA-Questions/tree/master/3430-count-days-without-meetings) |
 ## Greedy
 |  |
 | ------- |
